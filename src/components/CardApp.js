@@ -74,7 +74,7 @@ const CardApp = () => {
         </div>
       )}
       <div className="title">
-        <h1>Memory Game w/ Pokemons</h1>
+        <h1>Memory Game w/ Poke</h1>
       </div>
       <div className="CardApp">
         <div className="row-one">
