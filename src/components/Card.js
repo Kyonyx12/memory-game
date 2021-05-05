@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { CgPokemon } from "react-icons/cg";
+import "./Card.css";
 export default function Card({ isPair, images, randomImg, ind, handleClick }) {
   const [select, setSelect] = useState(false);
 
