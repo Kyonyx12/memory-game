@@ -1,0 +1,261 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  height: 100%;
+  width: 100%;
+}
+.modal {
+  font-family: "Zen Dots", cursive;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  position: absolute;
+  z-index: 1;
+  height: 100vh;
+  width: 100%;
+  background-color: #00000099;
+}
+.modal-info {
+  padding: 1rem;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-content: center;
+  height: 15%;
+  width: 15%;
+  background-color: gold;
+  animation: popUp 0.25s linear 0s 1 normal forwards running;
+  opacity: 0%;
+}
+@keyframes popUp {
+  30% {
+    opacity: 0%;
+    height: 15%;
+    width: 15%;
+  }
+  40% {
+    opacity: 20%;
+    height: 20%;
+    width: 20%;
+  }
+  50% {
+    opacity: 40%;
+    height: 25%;
+    width: 25%;
+  }
+  70% {
+    opacity: 60%;
+    height: 30%;
+    width: 30%;
+  }
+  85% {
+    opacity: 80%;
+    height: 35%;
+    width: 35%;
+  }
+  100% {
+    opacity: 100%;
+    height: 40%;
+    width: 40%;
+  }
+}
+.modal-button {
+  box-shadow: inset 0px 1px 0px 0px #ffffff;
+  margin-top: 0.5rem;
+  background-color: #00b0f0;
+  border-radius: 6px;
+  border: 1px solid #dcdcdc;
+  display: inline-block;
+  cursor: pointer;
+  color: white;
+  font-family: "Zen Dots", cursive;
+  font-size: 20px;
+  letter-spacing: 2px;
+  padding: 6px 18px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #ffffff;
+}
+.modal-button:hover {
+  transform: scale(1.05);
+  color: #00b0f0;
+  background-color: #ffffff;
+}
+.modal-button:active {
+  position: relative;
+  top: 1px;
+}
+
+main {
+  height: 100vh;
+  color: rgb(255, 255, 255);
+  background-color: #00b0f0;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  font-family: "Zen Dots", cursive;
+}
+
+.title {
+  background-color: gold;
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+.CardApp {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 720px;
+}
+.row-one {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  height: 20rem;
+}
+.row-two {
+  display: flex;
+  flex-flow: row-reverse wrap;
+  justify-content: center;
+  height: 20rem;
+}
+div img {
+  height: inherit;
+  width: inherit;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+}
+.icon {
+  height: 120px;
+  width: 120px;
+  position: absolute;
+  border-radius: inherit;
+}
+.card {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  border: solid 4px rgba(148, 148, 148, 0.05);
+  background-color: white;
+  margin: 0.5rem;
+  box-shadow: 4px 4px 7px 6px rgba(240, 240, 240, 0.548);
+  height: 120px;
+  width: 120px;
+  border-radius: 30px;
+  transition: 0.25s;
+}
+.card:hover {
+  transform: scale(1.05);
+  background-color: #ffffff;
+}
+
+.select {
+  animation: rotateInOut linear 2.5s;
+  border-radius: 20%;
+}
+.rotate {
+  animation: fadeIn ease-in-out 2.5s;
+  border-radius: 20%;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0%;
+    transform: scale(1.1);
+  }
+  25% {
+    opacity: 0%;
+  }
+  50% {
+    opacity: 100%;
+  }
+
+  75% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 0%;
+  }
+}
+
+@keyframes rotateInOut {
+  0% {
+    transform: rotateY(0deg);
+    transform: scale(1.1);
+  }
+  25% {
+    transform: rotateY(90deg);
+  }
+  50% {
+    transform: rotateY(180deg);
+  }
+  75% {
+    transform: rotateY(90deg);
+  }
+  100% {
+    transform: rotateY(0deg);
+  }
+}
+.pair {
+  border-radius: inherit;
+  background-color: gold;
+}
+.hidden {
+  opacity: 0%;
+}
+.visible {
+  opacity: 100%;
+}
+.stop {
+  pointer-events: none;
+}
+
+.win {
+  background-color: gold;
+  width: 100%;
+  height: 100vh;
+}
+
+@media (max-width: 720px) {
+  main {
+    display: block;
+  }
+  .title {
+    background-color: gold;
+    padding: 0.25rem;
+    margin: 0 0.25rem 0.25rem 0.25rem;
+    border-radius: 10px;
+  }
+  .CardApp {
+    width: 100vw;
+  }
+  .row-one {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    height: 18rem;
+  }
+  .row-two {
+    display: flex;
+    flex-flow: row-reverse wrap;
+    justify-content: center;
+    height: 18rem;
+  }
+  .icon {
+    height: 15vh;
+    width: 15vw;
+  }
+  .card {
+    margin: 0.25rem;
+    box-shadow: 2px 2px 5px 3px rgba(240, 240, 240, 0.548);
+    height: 15vh;
+    width: 15vw;
+    border-radius: 30px;
+    transition: 0.25s;
+  }
+}
