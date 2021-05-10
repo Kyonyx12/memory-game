@@ -73,10 +73,11 @@ const CardApp = () => {
           </div>
         </div>
       )}
-      <div className="title">
-        <h1>Memory Game w/ Pokemons</h1>
-      </div>
+
       <div className="CardApp">
+        <div className="title">
+          <h1>Memory Game w/ Pokemons</h1>
+        </div>
         <div className="row-one">
           <CardGrid
             matched={matched}

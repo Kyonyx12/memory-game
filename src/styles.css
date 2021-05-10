@@ -88,10 +88,11 @@ html {
   position: relative;
   top: 1px;
 }
-
+.modal-button p {
+  padding: 0;
+}
 main {
-  padding-top: 0.25vh;
-  height: 99.75vh;
+  height: 100vh;
   color: rgb(255, 255, 255);
   background-color: #00b0f0;
   display: flex;
@@ -104,7 +105,7 @@ main {
 
 .title {
   margin: auto;
-  width: 80%;
+  width: 100%;
   background-color: gold;
   padding: 0.5rem;
   border-radius: 10px;
@@ -114,6 +115,8 @@ main {
   align-self: center;
   display: flex;
   flex-flow: row wrap;
+  align-content: center;
+  align-items: center;
   justify-content: center;
   width: 720px;
 }
@@ -121,16 +124,18 @@ main {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  height: 19.5rem;
+  height: 300px;
+  width: 100%;
 }
 .row-two {
   display: flex;
   flex-flow: row-reverse wrap;
   justify-content: center;
-  height: 19.5rem;
+  height: 300px;
+  width: 100%;
 }
 div img {
-  height: inherit;
+  height: 100%;
   width: inherit;
   -webkit-user-drag: none;
   -khtml-user-drag: none;
@@ -215,6 +220,7 @@ div img {
   opacity: 0;
 }
 .visible {
+  background-size: cover;
   opacity: 1;
 }
 .stop {
@@ -222,20 +228,16 @@ div img {
 }
 
 .win {
-  padding-top: 0.25vh;
-  height: 99.75vh;
+  position: fixed;
+  height: 100vh;
   background-color: gold;
   width: 100%;
 }
 
 @media (max-width: 720px) {
-  main {
-    display: block;
-  }
   .title {
-    margin-top: 1rem;
-    margin-bottom: 0.5rem;
-    width: 90%;
+    padding: 0;
+    width: 98%;
   }
   .CardApp {
     width: 100vw;
@@ -244,13 +246,13 @@ div img {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    height: 18rem;
+    width: 98%;
   }
   .row-two {
     display: flex;
     flex-flow: row-reverse wrap;
     justify-content: center;
-    height: 18rem;
+    width: 98%;
   }
   .icon {
     height: 15vh;
@@ -263,5 +265,36 @@ div img {
     width: 15vw;
     border-radius: 30px;
     transition: 0.25s;
+  }
+}
+@media (max-width: 350px) {
+  .title {
+    margin-bottom: 0.5rem;
+    font-size: 0.75rem;
+    width: 90%;
+  }
+  .CardApp {
+    width: 100vw;
+  }
+  .row-one {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100%;
+  }
+  .row-two {
+    display: flex;
+    flex-flow: row-reverse wrap;
+    justify-content: center;
+    width: 100%;
+  }
+  .icon {
+    height: 15vh;
+    width: 15vw;
+  }
+  .card {
+    margin: 0.15rem;
+    height: 15vh;
+    width: 15vw;
   }
 }
