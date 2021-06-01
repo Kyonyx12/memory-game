@@ -6,7 +6,7 @@
 <br>
 <hr />
 </h2>
-<br/>
+
 <hr />
 <h2 align="center">
     <img src="memory-game-win.png" alt="memory game" width="600px"/>
