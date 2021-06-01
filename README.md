@@ -32,10 +32,9 @@
     <li>React</li>
     <li>CSS</li>
     <li>HTML</li>
-    <li>React-Icons</li>
 <ul>
 </div>
 <hr/>
 <div>
-<h2>See live demo, <a target="_blank" href="https://joseantoniolopezramos.site/">Click here</a>.</h2>
+<h2>See live demo, <a target="_blank" href="https://kyonyx12.github.io/memory-game/">Click here</a>.</h2>
 </div>
